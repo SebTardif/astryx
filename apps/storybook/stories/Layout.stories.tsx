@@ -1885,6 +1885,10 @@ export const HeaderStates: Story = {
             Row {index + 1}
           </p>
         ))}
+        {/* A focusable control keeps the scrolling content keyboard-reachable. */}
+        <Button label="Load more" variant="secondary">
+          Load more
+        </Button>
       </VStack>
     );
     const headerText = <p {...stylex.props(styles.bodyText)}>Header</p>;
